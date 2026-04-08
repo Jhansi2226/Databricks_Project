@@ -1,0 +1,9 @@
+{
+	"name": "retailfactory26",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8512068d-bc62-4d55-9a51-769b723c2919",
+		"tenantId": "808cc83e-a546-47e7-a03f-73a1ebba24f3"
+	}
+}
