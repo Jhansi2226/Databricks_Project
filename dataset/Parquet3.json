@@ -1,0 +1,33 @@
+{
+	"name": "Parquet3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "bronze/stores",
+				"fileSystem": "retail"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "store_id",
+				"type": "INT32"
+			},
+			{
+				"name": "store_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "location",
+				"type": "UTF8"
+			}
+		]
+	}
+}

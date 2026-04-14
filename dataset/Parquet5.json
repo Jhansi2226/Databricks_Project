@@ -1,0 +1,21 @@
+{
+	"name": "Parquet5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customers.parquet",
+				"folderPath": "bronze/customers",
+				"fileSystem": "retail"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
